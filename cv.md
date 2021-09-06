@@ -13,7 +13,7 @@ Right now my goal is to skill up in front-end development and choose grouth vect
 
 ## Skills
 
-ReactJS / Redux / JavaScript /Bootstrap / HTML5 / CSS3 / Git
+JavaScript / HTML5 / CSS3 / ReactJS / Redux / Bootstrap / Git
 
 ## Code sample
 
