@@ -1,0 +1,176 @@
+html {
+  background-color: #f7f7f7;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #fdfdfd;
+  background-color: #4b5e65;
+
+  width: 1300px;
+  /* height: 1300px; */
+  margin: 70px auto;
+  box-shadow: 25px 25px 41px 18px rgba(34, 60, 80, 0.28);
+}
+
+header {
+  padding: 50px 150px;
+
+  background-color: #4b5e65;
+  box-shadow: 25px 10px 41px 18px rgba(34, 60, 80, 0.28);
+}
+
+/* .header,
+.main {
+} */
+
+.header {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-gap: 10%;
+  grid-template-columns: auto 1fr;
+  /* font-size: 1fr;w */
+}
+
+.photo {
+  width: 195px;
+  height: 260px;
+  border-radius: 20%;
+  border: solid #fefefe 3px;
+
+  /* -webkit-box-shadow: -7px 7px 11px -1px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: -7px 7px 11px -1px rgba(0, 0, 0, 0.45); */
+  box-shadow: -3px 6px 4px -1px rgba(0, 0, 0, 0.29);
+}
+
+.info {
+  display: grid;
+  grid-gap: 25px;
+  align-content: start;
+}
+
+.info__details {
+  display: grid;
+  grid-gap: 3px;
+}
+
+.info__sn {
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-flow: column;
+  justify-content: start;
+}
+
+.icon-center {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+/* main {
+} */
+
+.main {
+  padding: 50px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 2fr;
+  background-color: white;
+}
+
+.main__left {
+  border-right: solid #4b5e65 5px;
+  display: grid;
+  justify-items: end;
+  align-content: start;
+  grid-gap: 10px;
+}
+
+.main__right {
+  display: grid;
+  justify-items: start;
+  align-content: start;
+  grid-gap: 10px;
+}
+
+.main__line {
+  padding: 15px 35px;
+  background-color: crimson;
+  margin: 20px 0;
+  letter-spacing: 4px;
+}
+
+.main__content {
+  margin: 0 20px;
+  color: #4b4b4b;
+  grid-gap: 10px;
+  font-size: 1.2em;
+}
+
+.content__r {
+  text-align: right;
+}
+
+footer {
+  padding: 50px 150px;
+  background-color: crimson;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+a,
+a:visited {
+  color: #fdfdfd;
+}
+
+.animate-spin:hover {
+  cursor: pointer;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  display: inline-block;
+}
+
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}

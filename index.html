@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link href="normalise.css" rel="stylesheet">
+  <link href="./assets/css/fontello.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+
+
+  <title>CV</title>
+</head>
+
+<body>
+  <header>
+    <section class="header">
+      <img src="./assets/img/my_photo.jpg" alt="my_photo" class="photo">
+      <div class="info">
+        <div class="info__name">
+          <h1>Raman KARSEKA</h1>
+          <h2>Front-end developer</h2>
+        </div>
+        <div class="info__details">
+          <h5>male</h5>
+          <h5>35 years young</h5>
+
+        </div>
+        <span>Right now my goal is to skill up in front-end development and
+          choose grouth vector for the next couple of years.</span>
+        <div class="info__sn">
+          <h3>
+            <a class="icon-center" href="https://www.linkedin.com/in/karseka/">
+              <span class="icon-linkedin-squared animate-spin"></span>karseka
+            </a>
+          </h3>
+          <h3>
+            <a class="icon-center" href="https://github.com/roman-ier/">
+              <span class="icon-github-squared animate-spin"></span>roman-ier
+            </a>
+          </h3>
+          <div class="">simple CV (MD)</div>
+          <div class="">another CV</div>
+          <div class="">download CV</div>
+
+
+        </div>
+      </div>
+    </section>
+
+  </header>
+  <main>
+    <div class="main">
+      <aside class="main__left">
+        <h4 class="main__line">contacts</h4>
+        <a href="https://yandex.by/maps/-/CCUiiXAkDA"
+          class="main__content icon-center">Minsk<span
+            class="icon-location"></span>
+        </a>
+        <a href="tel:+375291910479"
+          class="main__content icon-center">+375(29)191-04-79<span
+            class="icon-phone"></span>
+        </a>
+        <a href="mailto:raman.karseka@gmail.com"
+          class="main__content icon-center">raman.karseka@gmail.com<span
+            class="icon-mail-alt"></span>
+        </a>
+        <h4 class="main__line">Skills</h4>
+        <img src="https://www.codewars.com/users/roman-ier/badges/micro" alt="">
+
+        <div class="main__content content__r">ReactJS / Redux / JavaScript
+          /Bootstrap /
+          HTML5 / CSS3 / Git</div>
+        <h4 class="main__line">Languages</h4>
+        <div class="main__content icon-center">English
+          <h5>B1+</h5>
+        </div>
+        <h4 class="main__line">Hobbies</h4>
+        <span class="main__content content__r">cycling, snowboarding, squash,
+          swimming, driving </span>
+      </aside>
+      <div class="main__right">
+        <h4 class="main__line">Last experience</h4>
+        <div class="main__content">2014-2017 Deputy Chief Information Officer,
+          Junix Ltd, RUSSIA</div>
+        <div class="main__content"> 2017-2021 Security operations officer,
+          Priorbank JSC, BELARUS</div>
+        <h4 class="main__line">education</h4>
+        <div class="main__content">Belarusian State University, FAMCS, 2013
+          software engineer</div>
+        <div class="main__content"> Belarusian State Economic University, FM,
+          2012 economist-manager</div>
+        <h4 class="main__line">courses</h4>
+        <div class="main__content"> 2020 It-incubator</div>
+        <div class="main__content"> 2021 RSS</div>
+        <h4 class="main__line">Portfolio</h4>
+        <div class="main__content"> HTML & CSS layout </div>
+        <div class="main__content"> JavaScript </div>
+        <div class="main__content"> React JS </div>
+        <h4 class="main__line">Code sample</h4>
+        <pre class="main__content">
+
+          const Paginator = ({currentPage, onPageChanged, ...props}) =&gt; {
+              const pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
+              const pages = [];
+              const firstPageCallback = page =&gt; currentPage &gt; 1 ? () =&gt; {
+                  onPageChanged(page)
+              } : null;
+              let pNumber;
+              if (currentPage &lt; 6) {
+                  pNumber = 2
+              } else if (currentPage &gt; (pagesCount - 5)) {
+                  pNumber = pagesCount - 7;
+              } else {
+                  pNumber = currentPage - 3
+              }
+          
+              for (let i = pNumber; i &lt; pNumber + 7; i++) {
+                  pages.push(i);
+              }
+          
+                    </pre>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <a href="#">Download CV</a>
+  </footer>
+
+</body>
+
+</html>
